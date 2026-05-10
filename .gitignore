@@ -1,0 +1,9 @@
+// MD Files
+ARCHITECTURE.md
+
+// Backend
+/backend/.env
+/backend/node_modules
+
+// Frontend
+/frontend/node_modules

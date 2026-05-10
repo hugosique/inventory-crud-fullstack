@@ -1,0 +1,42 @@
+.product-list__state-box {
+    border-radius: var(--radius-md);
+    padding: 2.5rem 2rem;
+    text-align: center;
+}
+
+.product-list__state-box--loading {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--copy);
+    box-shadow: var(--shadow-card);
+    font-size: 0.9rem;
+}
+
+.product-list__state-box--error {
+    background-color: var(--danger-light);
+    border: 1px solid #FECACA;
+    border-left: 4px solid var(--danger);
+    color: var(--danger-dark);
+    font-size: 0.875rem;
+}
+
+.product-list__state-box--empty {
+    background-color: var(--surface);
+    border: 1.5px dashed var(--border);
+    box-shadow: var(--shadow-card);
+}
+
+.product-list__empty-title {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--heading);
+}
+
+.product-list__empty-text {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--copy);
+}

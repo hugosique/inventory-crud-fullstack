@@ -1,0 +1,158 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.button:not(.disabled):hover {
+    transform: translateY(-2px);
+}
+
+.button svg {
+    stroke-width: 2.8;
+}
+
+.primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.secondary {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.secondary:hover {
+    background-color: var(--secondary-mid);
+}
+
+.danger {
+    background-color: var(--danger);
+    color: white;
+}
+
+.danger:hover {
+    filter: brightness(0.9);
+}
+
+.light {
+    background-color: var(--surface-muted);
+    color: var(--copy);
+}
+
+.light:hover {
+    background-color: var(--border);
+}
+
+.outlined {
+    background-color: var(--surface);
+    border-color: var(--border);
+}
+
+.outlined.primary {
+    color: var(--primary);
+    background-color: transparent;
+}
+
+.outlined.primary:hover {
+    border-color: var(--primary);
+    background-color: var(--primary-light);
+}
+
+.outlined.secondary {
+    color: var(--secondary);
+    background-color: transparent;
+}
+
+.outlined.secondary:hover {
+    background-color: color-mix(in srgb, var(--secondary) 8%, transparent);
+}
+
+.outlined.danger {
+    color: var(--danger);
+    background-color: transparent;
+}
+
+.outlined.danger:hover {
+    background-color: var(--danger-light);
+}
+
+.outlined.light {
+    color: var(--copy);
+    background-color: transparent;
+}
+
+.outlined.light:hover {
+    background-color: var(--surface-hover);
+}
+
+.clean {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.clean.primary {
+    color: var(--primary);
+}
+
+.clean.primary:hover {
+    color: var(--primary-dark);
+    background-color: var(--primary-light);
+}
+
+.clean.secondary {
+    color: var(--secondary);
+}
+
+.clean.secondary:hover {
+    color: var(--secondary-mid);
+    background-color: color-mix(in srgb, var(--secondary) 10%, transparent);
+}
+
+.clean.danger {
+    color: var(--danger);
+}
+
+.clean.danger:hover {
+    color: var(--danger-dark);
+    background-color: var(--danger-light);
+}
+
+.clean.light {
+    color: var(--copy);
+}
+
+.clean.light:hover {
+    color: var(--heading);
+    background-color: var(--surface-hover);
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: default;
+    pointer-events: none;
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,34 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.icon {
+    color: white;
+    animation: floatAndSpin 2s ease-in-out infinite;
+}
+
+@keyframes floatAndSpin {
+    0% {
+        transform: translateY(20px) rotate(0deg);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(0px) rotate(180deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-20px) rotate(360deg);
+        opacity: 0;
+    }
+}

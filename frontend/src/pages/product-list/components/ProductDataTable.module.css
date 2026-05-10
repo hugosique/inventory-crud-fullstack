@@ -1,0 +1,33 @@
+.product-table__wrap {
+  width: 100%;
+}
+
+.product-table__product-name {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--heading);
+}
+
+.product-table__product-description {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--copy);
+  margin-top: 0.2rem;
+  line-height: 1.5;
+}
+
+.product-table__price {
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--heading);
+}
+
+.product-table__stock {
+  white-space: nowrap;
+}
+
+.product-table__row-actions {
+  display: inline-flex;
+}

@@ -1,0 +1,71 @@
+.table__card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+}
+
+.table__scroll {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table__thead {
+    background-color: var(--surface-muted);
+    border-bottom: 1px solid var(--border);
+}
+
+.table__th {
+    padding: 0.75rem 1rem;
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--copy-muted);
+    white-space: nowrap;
+}
+
+.table__th--right {
+    text-align: right;
+}
+
+.table__th--center {
+    text-align: center;
+}
+
+.table__tr {
+    border-bottom: 1px solid var(--border);
+    transition: background-color var(--transition-smooth);
+}
+
+.table__tr:last-child {
+    border-bottom: none;
+}
+
+.table__tr:hover {
+    background-color: var(--primary-light);
+}
+
+.table__td {
+    padding: 1rem;
+    font-size: 0.875rem;
+    color: var(--copy);
+    vertical-align: middle;
+}
+
+.table__td--right {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.table__td--center {
+    text-align: center;
+}

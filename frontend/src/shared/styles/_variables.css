@@ -1,0 +1,51 @@
+:root {
+    /* Brand colors */
+    --primary: #F47920;
+    --primary-dark: #D96A10;
+    --primary-light: #FDECD9;
+
+    --secondary: #003DA5;
+    --secondary-mid: #0055C8;
+    --secondary-light: #4A90D9;
+
+    --accent: #FFD700;
+    --highlight: #E91E8C;
+
+    /* Feedback */
+    --danger: #EF4444;
+    --danger-dark: #B91C1C;
+    --danger-light: #FEE2E2;
+    --success: #16A34A;
+    --success-light: #DCFCE7;
+
+    /* Surfaces */
+    --surface: #FFFFFF;
+    --surface-muted: #F7F8FA;
+    --surface-hover: #F0F1F5;
+    --border: #E2E5EC;
+    --border-focus: #4A90D9;
+
+    /* Typography */
+    --copy: #4B5563;
+    --copy-muted: #9CA3AF;
+    --heading: #111827;
+
+    /* Fonts */
+    --font-heading: 'Montserrat', 'Arial Black', sans-serif;
+    --font-body: 'Montserrat', 'Arial', sans-serif;
+
+    /* Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+
+    /* Transitions */
+    --transition-base: 150ms ease;
+    --transition-smooth: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Shadows */
+    --shadow-card: 0 1px 4px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.06);
+    --shadow-header: 0 2px 8px rgba(0, 0, 0, 0.12);
+    --shadow-btn: 0 2px 6px rgba(244, 121, 32, 0.35);
+    --shadow-focus: 0 0 0 3px rgba(74, 144, 217, 0.30);
+}

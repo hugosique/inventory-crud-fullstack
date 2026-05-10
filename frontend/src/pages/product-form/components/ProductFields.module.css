@@ -1,0 +1,36 @@
+.product-fields__body {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.product-fields__grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.product-fields__actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border);
+    flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+    .product-fields__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-fields__actions {
+        flex-direction: column-reverse;
+    }
+}
